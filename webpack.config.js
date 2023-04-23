@@ -7,7 +7,8 @@ module.exports = {
   entry: `${SRC_DIR}/index.js`,
   output: {
     filename: 'bundle.js',
-    path: DIST_DIR
+    path: DIST_DIR,
+    // clean: true; // added manually for cleaning
   },
   devtool: 'source-map',
   module: {

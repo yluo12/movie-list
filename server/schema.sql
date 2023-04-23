@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS movielist;
+
+CREATE DATABASE movielist;
+
+USE movielist;
+
+DROP TABLE IF EXISTS movies;
+CREATE TABLE movies (
+  id INTEGER(4) AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(180),
+  watched VARCHAR(5) DEFAULT 0
+);
+
